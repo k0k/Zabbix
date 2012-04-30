@@ -1,8 +1,18 @@
-Template to keep monitored PostgreSQL Enterprise Databases, some features monitored are: connection pool, buffers, locks, checkpoints, performance and availability,  displays graphics, this work is inspired in Postbix for Zabbix.
+1.- zabbix-json-register-host.pl: Simple perl script to access the JSON API Zabbix, 
+it use the methods of access and register, designed to deploy via puppet and register
+each server without monkey assistence ;D, the requirements are perl-JSON-XS on Fedora/RHEL5+
+or install via CPAN: cpan JSON::XS.
 
+2.- db-pgstat.pl - Simple perl script designed to work with Zabbix to keep monitored 
+PostgreSQL databases some features monitored are: connection pool, buffers, locks, checkpoints, 
+must be used with zbx_Template_App_PostgreSQL.xml file.
 
-Tested in zabbix version 1.8.10.
-You just need to put the script: 'db-pgstat.pl' on the databases servers in a executable search path and add user paramenter in zabbix_agentd.conf:
+3.- zbx_Template_App_PostgreSQL.xml: XML template to keep monitored PostgreSQL Enterprise Databases,
+must be used with db-pgstat.pl perl script. 
+
+INSTRUCTIONS:
+You just need to put the script: 'db-pgstat.pl' on the databases servers in a executable search path 
+and add user paramenter in zabbix_agentd.conf:
 
 UserParameter=postgres.activeconn,db-pgstat.pl --user postgres --database DATABASE --activeconn 
 UserParameter=postgres.tupreturned,db-pgstat.pl --user postgres --database DATABASE --tupreturned
@@ -30,4 +40,4 @@ UserParameter=postgres.buffers_alloc,db-pgstat.pl --user postgres --database DAT
 You can use --pass option for password database support (not recommend).
 Zabbix discussions: http://www.zabbix.com/forum/showthread.php?p=99640#post99640
 
-This template and perl file was tested for Zabbix 1.8.10, postgreSQL 8.4+ and RHEL 5.5
+Template and perl file was tested for Zabbix 1.8.10, postgreSQL 8.4+ and RHEL 5.5
