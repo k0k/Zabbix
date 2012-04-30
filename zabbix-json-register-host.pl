@@ -6,7 +6,7 @@
 use strict;
 use LWP::UserAgent;
 use JSON::XS;
-use	Sys::Hostname;
+use Sys::Hostname;
 use IO::Socket;
 
 # Credenciales Zabbix Portal.
