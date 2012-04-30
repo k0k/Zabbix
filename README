@@ -1,0 +1,33 @@
+Template to keep monitored PostgreSQL Enterprise Databases, some features monitored are: connection pool, buffers, locks, checkpoints, performance and availability,  displays graphics, this work is inspired in Postbix for Zabbix.
+
+
+Tested in zabbix version 1.8.10.
+You just need to put the script: 'db-pgstat.pl' on the databases servers in a executable search path and add user paramenter in zabbix_agentd.conf:
+
+UserParameter=postgres.activeconn,db-pgstat.pl --user postgres --database DATABASE --activeconn 
+UserParameter=postgres.tupreturned,db-pgstat.pl --user postgres --database DATABASE --tupreturned
+UserParameter=postgres.tupfetched,db-pgstat.pl --user postgres --database DATABASE --tupfetched
+UserParameter=postgres.tupinserted,db-pgstat.pl --user postgres --database DATABASE --tupinserted
+UserParameter=postgres.tupupdated,db-pgstat.pl --user postgres --database DATABASE --tupupdated
+UserParameter=postgres.tupdeleted,db-pgstat.pl --user postgres --database DATABASE --tupdeleted
+UserParameter=postgres.xactcommit,db-pgstat.pl --user postgres --database DATABASE --xactcommit
+UserParameter=postgres.xactrollback,db-pgstat.pl --user postgres --database DATABASE --xactrollback
+UserParameter=postgres.exclusivelock,db-pgstat.pl --user postgres --database DATABASE --exclusivelock
+UserParameter=postgres.accessexclusivelock,db-pgstat.pl --user postgres --database DATABASE --accessexclusivelock
+UserParameter=postgres.accesssharelockery,db-pgstat.pl --user postgres --database DATABASE --accesssharelockery
+UserParameter=postgres.rowsharelock,db-pgstat.pl --user postgres --database DATABASE --rowsharelock
+UserParameter=postgres.rowexclusivelock,db-pgstat.pl --user postgres --database DATABASE --rowexclusivelock
+UserParameter=postgres.shareupdateexclusivelock,db-pgstat.pl --user postgres --database DATABASE --shareupdateexclusivelock
+UserParameter=postgres.sharerowexclusivelock,db-pgstat.pl --user postgres --database DATABASE --sharerowexclusivelock
+UserParameter=postgres.checkpoints_timed,db-pgstat.pl --user postgres --database DATABASE --checkpoints_timed
+UserParameter=postgres.checkpoints_req,db-pgstat.pl --user postgres --database DATABASE --checkpoints_req
+UserParameter=postgres.buffers_checkpoint,db-pgstat.pl --user postgres --database DATABASE --buffers_checkpoint
+UserParameter=postgres.buffers_clean,db-pgstat.pl --user postgres --database DATABASE --buffers_clean
+UserParameter=postgres.maxwritten_clean,db-pgstat.pl --user postgres --database DATABASE --maxwritten_clean
+UserParameter=postgres.buffers_backend,db-pgstat.pl --user postgres --database DATABASE --buffers_backend
+UserParameter=postgres.buffers_alloc,db-pgstat.pl --user postgres --database DATABASE  --buffers_alloc
+
+You can use --pass option for password database support.
+http://www.zabbix.com/forum/showthread.php?p=99640#post99640
+
+This template and perl file was tested for Zabbix 1.8.10, postgreSQL 8.4+ and RHEL 5.5
