@@ -27,7 +27,7 @@ UserParameter=postgres.maxwritten_clean,db-pgstat.pl --user postgres --database 
 UserParameter=postgres.buffers_backend,db-pgstat.pl --user postgres --database DATABASE --buffers_backend
 UserParameter=postgres.buffers_alloc,db-pgstat.pl --user postgres --database DATABASE  --buffers_alloc
 
-You can use --pass option for password database support.
-http://www.zabbix.com/forum/showthread.php?p=99640#post99640
+You can use --pass option for password database support (not recommend).
+Zabbix discussions: uhttp://www.zabbix.com/forum/showthread.php?p=99640#post99640
 
 This template and perl file was tested for Zabbix 1.8.10, postgreSQL 8.4+ and RHEL 5.5
