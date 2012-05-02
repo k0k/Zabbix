@@ -48,7 +48,7 @@ my %querys = (
     "buffers_clean"         =>	qq{SELECT buffers_clean FROM pg_stat_bgwriter},
     "maxwritten_clean"	    =>	qq{SELECT maxwritten_clean FROM pg_stat_bgwriter},
     "buffers_backend"	    =>	qq{SELECT buffers_backend FROM pg_stat_bgwriter},
-    "buffers_alloc"	        =>	qq{SELECT buffers_alloc FROM pg_stat_bgwriter},
+    "buffers_alloc"         =>	qq{SELECT buffers_alloc FROM pg_stat_bgwriter},
 );
 
 GetOptions(
