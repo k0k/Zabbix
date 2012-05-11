@@ -1,8 +1,22 @@
 #!/bin/env perl
-#
-#
-# Wimer Jaramillo M. <wilmer@fedoraproject.org>
-#
+# This program was designed to create a host in a template profile on zabbix monitoring 
+# platform, use the Zabbix JSON-RPC API, this script send a POST request to zabbix URL
+# with input data in JSON. 
+# Copyright (C) 2012 Wilmer Jaramillo M. <wilmer@fedoraproject.org>
+
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 3 of the License, or
+# (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with this program. If not, see <http://www.gnu.org/licenses/>
+
 use strict;
 use LWP::UserAgent;
 use JSON::XS;
@@ -117,12 +131,12 @@ sub create_host {	# http://www.zabbix.com/documentation/1.8/api/host/create
 json_connect( $json_uri )
 
 # vim: set nowrap nu foldmethod=marker:
+
 __DATA__
 Connecting Sucessfull to http://192.168.xxx.xx/zabbix/api_jsonrpc.php
 Login Zabbix JSON API...
 id session: 6a7b4582b9e35c1bbc81f02544bd0db1
 Creating host on Zabbix...
-
 
 =head1 NAME
 
