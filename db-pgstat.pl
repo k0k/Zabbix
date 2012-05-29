@@ -24,8 +24,10 @@ my ($database, $user, $pass, $help);
 my $hostname = hostname;
 
 my %querys = (
-# State
-    "activeconn"        =>	qq{SELECT SUM(numbackends) FROM pg_stat_database},
+# State    
+    "size"              =>  qq{SELECT SUM(pg_database_size(datid)) as total_size from pg_stat_database},
+    'threads'       => sub { print query_database($querys{threads}) },
+    "activeconn"        =>	qq{SELECT SUM(numbackends) FROM pg_stat_database},    
     "tupreturned"       =>	qq{SELECT SUM(tup_returned) FROM pg_stat_database},
     "tupfetched"        =>	qq{SELECT SUM(tup_fetched) FROM pg_stat_database},
     "tupinserted"       =>	qq{SELECT SUM(tup_inserted) FROM pg_stat_database},
@@ -56,6 +58,8 @@ GetOptions(
     'user=s'    =>  \$user,
     'pass=s'    =>  \$pass,
     'database=s'    =>  \$database,
+    'size'          => sub { print query_database($querys{size}) },
+    'threads'       => sub { print query_database($querys{threads}) },
     'activeconn'    => sub { print query_database($querys{activeconn}) },
     'tupreturned'   => sub { print query_database($querys{tupreturned}) }, 
     'tupfetched'    => sub { print query_database($querys{tupfetched}) },
