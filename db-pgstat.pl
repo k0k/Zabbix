@@ -25,6 +25,8 @@ my $hostname = hostname;
 
 my %querys = (
 # State
+    "size"              =>  qq{SELECT SUM(pg_database_size(datid)) as total_size from pg_stat_database},
+    "threads"           =>  qq{SELECT count(*) FROM pg_stat_activity},
     "activeconn"        =>	qq{SELECT SUM(numbackends) FROM pg_stat_database},
     "tupreturned"       =>	qq{SELECT SUM(tup_returned) FROM pg_stat_database},
     "tupfetched"        =>	qq{SELECT SUM(tup_fetched) FROM pg_stat_database},
@@ -56,6 +58,8 @@ GetOptions(
     'user=s'    =>  \$user,
     'pass=s'    =>  \$pass,
     'database=s'    =>  \$database,
+    'size'			=> sub { print query_database($querys{size}) },
+    'threads'       => sub { print query_database($querys{threads}) },
     'activeconn'    => sub { print query_database($querys{activeconn}) },
     'tupreturned'   => sub { print query_database($querys{tupreturned}) }, 
     'tupfetched'    => sub { print query_database($querys{tupfetched}) },
@@ -108,6 +112,6 @@ __EOF__
 
     exit 0
 }
-if (!$ARGV) { usage }
+#if (!$ARGV) { usage }
 
 # vim: ts=4 sw=4 sts=4 et ai nu nowrap bg=dark
