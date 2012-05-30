@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<zabbix_export version="1.0" date="23.04.12" time="09.17">
+<zabbix_export version="1.0" date="30.05.12" time="14.23">
   <hosts>
     <host name="Template_App_PostgreSQL">
       <proxy_hostid>0</proxy_hostid>
@@ -299,7 +299,7 @@
           <snmpv3_privpassphrase></snmpv3_privpassphrase>
           <valuemapid>0</valuemapid>
           <applications>
-            <application>CheckPoint</application>
+            <application>CheckPoints</application>
           </applications>
         </item>
         <item type="0" key="postgres.checkpoints_timed" value_type="3">
@@ -333,7 +333,7 @@
           <snmpv3_privpassphrase></snmpv3_privpassphrase>
           <valuemapid>0</valuemapid>
           <applications>
-            <application>CheckPoint</application>
+            <application>CheckPoints</application>
           </applications>
         </item>
         <item type="0" key="postgres.exclusivelock" value_type="3">
@@ -504,6 +504,74 @@
           <valuemapid>0</valuemapid>
           <applications>
             <application>Locks</application>
+          </applications>
+        </item>
+        <item type="0" key="postgres.size" value_type="3">
+          <description>Total size database</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>30</delay>
+          <history>90</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units>B</units>
+          <multiplier>0</multiplier>
+          <delta>1</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>Available</application>
+          </applications>
+        </item>
+        <item type="0" key="postgres.threads" value_type="3">
+          <description>Total threads</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>30</delay>
+          <history>90</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units></units>
+          <multiplier>0</multiplier>
+          <delta>1</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>Available</application>
           </applications>
         </item>
         <item type="0" key="postgres.tupdeleted" value_type="3">
@@ -752,9 +820,9 @@
           <trends>365</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units></units>
+          <units>B</units>
           <multiplier>0</multiplier>
-          <delta>0</delta>
+          <delta>1</delta>
           <formula>1</formula>
           <lastlogsize>0</lastlogsize>
           <logtimefmt></logtimefmt>
@@ -815,226 +883,6 @@
       </items>
       <templates/>
       <graphs>
-        <graph name="Connections" width="900" height="200">
-          <ymin_type>0</ymin_type>
-          <ymax_type>0</ymax_type>
-          <ymin_item_key></ymin_item_key>
-          <ymax_item_key></ymax_item_key>
-          <show_work_period>1</show_work_period>
-          <show_triggers>1</show_triggers>
-          <graphtype>0</graphtype>
-          <yaxismin>0.0000</yaxismin>
-          <yaxismax>100.0000</yaxismax>
-          <show_legend>0</show_legend>
-          <show_3d>0</show_3d>
-          <percent_left>0.0000</percent_left>
-          <percent_right>0.0000</percent_right>
-          <graph_elements>
-            <graph_element item="Template_App_PostgreSQL:postgres.activeconn">
-              <drawtype>0</drawtype>
-              <sortorder>0</sortorder>
-              <color>009900</color>
-              <yaxisside>0</yaxisside>
-              <calc_fnc>2</calc_fnc>
-              <type>0</type>
-              <periods_cnt>5</periods_cnt>
-            </graph_element>
-            <graph_element item="Template_App_PostgreSQL:proc.num[,postgres]">
-              <drawtype>0</drawtype>
-              <sortorder>1</sortorder>
-              <color>0000CC</color>
-              <yaxisside>0</yaxisside>
-              <calc_fnc>2</calc_fnc>
-              <type>0</type>
-              <periods_cnt>5</periods_cnt>
-            </graph_element>
-          </graph_elements>
-        </graph>
-        <graph name="Transacctions Per Second" width="900" height="200">
-          <ymin_type>0</ymin_type>
-          <ymax_type>0</ymax_type>
-          <ymin_item_key></ymin_item_key>
-          <ymax_item_key></ymax_item_key>
-          <show_work_period>0</show_work_period>
-          <show_triggers>0</show_triggers>
-          <graphtype>0</graphtype>
-          <yaxismin>0.0000</yaxismin>
-          <yaxismax>100.0000</yaxismax>
-          <show_legend>0</show_legend>
-          <show_3d>0</show_3d>
-          <percent_left>0.0000</percent_left>
-          <percent_right>0.0000</percent_right>
-          <graph_elements>
-            <graph_element item="Template_App_PostgreSQL:postgres.xactcommit">
-              <drawtype>0</drawtype>
-              <sortorder>1</sortorder>
-              <color>009900</color>
-              <yaxisside>0</yaxisside>
-              <calc_fnc>2</calc_fnc>
-              <type>0</type>
-              <periods_cnt>5</periods_cnt>
-            </graph_element>
-            <graph_element item="Template_App_PostgreSQL:postgres.xactrollback">
-              <drawtype>0</drawtype>
-              <sortorder>0</sortorder>
-              <color>BB0000</color>
-              <yaxisside>0</yaxisside>
-              <calc_fnc>2</calc_fnc>
-              <type>0</type>
-              <periods_cnt>5</periods_cnt>
-            </graph_element>
-          </graph_elements>
-        </graph>
-        <graph name="Buffers" width="900" height="200">
-          <ymin_type>0</ymin_type>
-          <ymax_type>0</ymax_type>
-          <ymin_item_key></ymin_item_key>
-          <ymax_item_key></ymax_item_key>
-          <show_work_period>1</show_work_period>
-          <show_triggers>0</show_triggers>
-          <graphtype>0</graphtype>
-          <yaxismin>0.0000</yaxismin>
-          <yaxismax>100.0000</yaxismax>
-          <show_legend>0</show_legend>
-          <show_3d>0</show_3d>
-          <percent_left>0.0000</percent_left>
-          <percent_right>0.0000</percent_right>
-          <graph_elements>
-            <graph_element item="Template_App_PostgreSQL:postgres.buffers_backend">
-              <drawtype>0</drawtype>
-              <sortorder>0</sortorder>
-              <color>BB0000</color>
-              <yaxisside>0</yaxisside>
-              <calc_fnc>2</calc_fnc>
-              <type>0</type>
-              <periods_cnt>5</periods_cnt>
-            </graph_element>
-            <graph_element item="Template_App_PostgreSQL:postgres.buffers_alloc">
-              <drawtype>0</drawtype>
-              <sortorder>1</sortorder>
-              <color>009900</color>
-              <yaxisside>0</yaxisside>
-              <calc_fnc>2</calc_fnc>
-              <type>0</type>
-              <periods_cnt>5</periods_cnt>
-            </graph_element>
-            <graph_element item="Template_App_PostgreSQL:postgres.buffers_checkpoint">
-              <drawtype>0</drawtype>
-              <sortorder>3</sortorder>
-              <color>00CCCC</color>
-              <yaxisside>0</yaxisside>
-              <calc_fnc>2</calc_fnc>
-              <type>0</type>
-              <periods_cnt>5</periods_cnt>
-            </graph_element>
-            <graph_element item="Template_App_PostgreSQL:postgres.buffers_clean">
-              <drawtype>0</drawtype>
-              <sortorder>2</sortorder>
-              <color>EEEE00</color>
-              <yaxisside>0</yaxisside>
-              <calc_fnc>2</calc_fnc>
-              <type>0</type>
-              <periods_cnt>5</periods_cnt>
-            </graph_element>
-          </graph_elements>
-        </graph>
-        <graph name="Tuples" width="900" height="200">
-          <ymin_type>0</ymin_type>
-          <ymax_type>0</ymax_type>
-          <ymin_item_key></ymin_item_key>
-          <ymax_item_key></ymax_item_key>
-          <show_work_period>1</show_work_period>
-          <show_triggers>0</show_triggers>
-          <graphtype>0</graphtype>
-          <yaxismin>0.0000</yaxismin>
-          <yaxismax>100.0000</yaxismax>
-          <show_legend>0</show_legend>
-          <show_3d>0</show_3d>
-          <percent_left>0.0000</percent_left>
-          <percent_right>0.0000</percent_right>
-          <graph_elements>
-            <graph_element item="Template_App_PostgreSQL:postgres.tupdeleted">
-              <drawtype>0</drawtype>
-              <sortorder>0</sortorder>
-              <color>009900</color>
-              <yaxisside>0</yaxisside>
-              <calc_fnc>2</calc_fnc>
-              <type>0</type>
-              <periods_cnt>5</periods_cnt>
-            </graph_element>
-            <graph_element item="Template_App_PostgreSQL:postgres.tupinserted">
-              <drawtype>0</drawtype>
-              <sortorder>1</sortorder>
-              <color>00DDDD</color>
-              <yaxisside>0</yaxisside>
-              <calc_fnc>2</calc_fnc>
-              <type>0</type>
-              <periods_cnt>5</periods_cnt>
-            </graph_element>
-            <graph_element item="Template_App_PostgreSQL:postgres.tupreturned">
-              <drawtype>0</drawtype>
-              <sortorder>4</sortorder>
-              <color>0000AA</color>
-              <yaxisside>0</yaxisside>
-              <calc_fnc>2</calc_fnc>
-              <type>0</type>
-              <periods_cnt>5</periods_cnt>
-            </graph_element>
-            <graph_element item="Template_App_PostgreSQL:postgres.tupfetched">
-              <drawtype>0</drawtype>
-              <sortorder>2</sortorder>
-              <color>DDDD00</color>
-              <yaxisside>0</yaxisside>
-              <calc_fnc>2</calc_fnc>
-              <type>0</type>
-              <periods_cnt>5</periods_cnt>
-            </graph_element>
-            <graph_element item="Template_App_PostgreSQL:postgres.tupupdated">
-              <drawtype>0</drawtype>
-              <sortorder>3</sortorder>
-              <color>CC0000</color>
-              <yaxisside>0</yaxisside>
-              <calc_fnc>2</calc_fnc>
-              <type>0</type>
-              <periods_cnt>5</periods_cnt>
-            </graph_element>
-          </graph_elements>
-        </graph>
-        <graph name="Checkpoint" width="900" height="200">
-          <ymin_type>0</ymin_type>
-          <ymax_type>0</ymax_type>
-          <ymin_item_key></ymin_item_key>
-          <ymax_item_key></ymax_item_key>
-          <show_work_period>1</show_work_period>
-          <show_triggers>0</show_triggers>
-          <graphtype>0</graphtype>
-          <yaxismin>0.0000</yaxismin>
-          <yaxismax>100.0000</yaxismax>
-          <show_legend>0</show_legend>
-          <show_3d>0</show_3d>
-          <percent_left>0.0000</percent_left>
-          <percent_right>0.0000</percent_right>
-          <graph_elements>
-            <graph_element item="Template_App_PostgreSQL:postgres.checkpoints_req">
-              <drawtype>0</drawtype>
-              <sortorder>0</sortorder>
-              <color>009900</color>
-              <yaxisside>0</yaxisside>
-              <calc_fnc>2</calc_fnc>
-              <type>0</type>
-              <periods_cnt>5</periods_cnt>
-            </graph_element>
-            <graph_element item="Template_App_PostgreSQL:postgres.checkpoints_timed">
-              <drawtype>0</drawtype>
-              <sortorder>1</sortorder>
-              <color>0000BB</color>
-              <yaxisside>0</yaxisside>
-              <calc_fnc>2</calc_fnc>
-              <type>0</type>
-              <periods_cnt>5</periods_cnt>
-            </graph_element>
-          </graph_elements>
-        </graph>
         <graph name="Locks" width="900" height="200">
           <ymin_type>0</ymin_type>
           <ymax_type>0</ymax_type>
@@ -1134,6 +982,261 @@
               <drawtype>1</drawtype>
               <sortorder>0</sortorder>
               <color>009900</color>
+              <yaxisside>1</yaxisside>
+              <calc_fnc>2</calc_fnc>
+              <type>0</type>
+              <periods_cnt>5</periods_cnt>
+            </graph_element>
+            <graph_element item="Template_App_PostgreSQL:postgres.threads">
+              <drawtype>1</drawtype>
+              <sortorder>1</sortorder>
+              <color>00BBBB</color>
+              <yaxisside>1</yaxisside>
+              <calc_fnc>2</calc_fnc>
+              <type>0</type>
+              <periods_cnt>5</periods_cnt>
+            </graph_element>
+          </graph_elements>
+        </graph>
+        <graph name="Transacctions Per Second" width="900" height="200">
+          <ymin_type>0</ymin_type>
+          <ymax_type>0</ymax_type>
+          <ymin_item_key></ymin_item_key>
+          <ymax_item_key></ymax_item_key>
+          <show_work_period>0</show_work_period>
+          <show_triggers>0</show_triggers>
+          <graphtype>0</graphtype>
+          <yaxismin>0.0000</yaxismin>
+          <yaxismax>100.0000</yaxismax>
+          <show_legend>0</show_legend>
+          <show_3d>0</show_3d>
+          <percent_left>0.0000</percent_left>
+          <percent_right>0.0000</percent_right>
+          <graph_elements>
+            <graph_element item="Template_App_PostgreSQL:postgres.xactcommit">
+              <drawtype>0</drawtype>
+              <sortorder>1</sortorder>
+              <color>009900</color>
+              <yaxisside>0</yaxisside>
+              <calc_fnc>2</calc_fnc>
+              <type>0</type>
+              <periods_cnt>5</periods_cnt>
+            </graph_element>
+            <graph_element item="Template_App_PostgreSQL:postgres.xactrollback">
+              <drawtype>0</drawtype>
+              <sortorder>0</sortorder>
+              <color>BB0000</color>
+              <yaxisside>0</yaxisside>
+              <calc_fnc>2</calc_fnc>
+              <type>0</type>
+              <periods_cnt>5</periods_cnt>
+            </graph_element>
+          </graph_elements>
+        </graph>
+        <graph name="Tuples" width="900" height="200">
+          <ymin_type>0</ymin_type>
+          <ymax_type>0</ymax_type>
+          <ymin_item_key></ymin_item_key>
+          <ymax_item_key></ymax_item_key>
+          <show_work_period>1</show_work_period>
+          <show_triggers>0</show_triggers>
+          <graphtype>0</graphtype>
+          <yaxismin>0.0000</yaxismin>
+          <yaxismax>100.0000</yaxismax>
+          <show_legend>0</show_legend>
+          <show_3d>0</show_3d>
+          <percent_left>0.0000</percent_left>
+          <percent_right>0.0000</percent_right>
+          <graph_elements>
+            <graph_element item="Template_App_PostgreSQL:postgres.tupdeleted">
+              <drawtype>0</drawtype>
+              <sortorder>0</sortorder>
+              <color>009900</color>
+              <yaxisside>0</yaxisside>
+              <calc_fnc>2</calc_fnc>
+              <type>0</type>
+              <periods_cnt>5</periods_cnt>
+            </graph_element>
+            <graph_element item="Template_App_PostgreSQL:postgres.tupinserted">
+              <drawtype>0</drawtype>
+              <sortorder>1</sortorder>
+              <color>00DDDD</color>
+              <yaxisside>0</yaxisside>
+              <calc_fnc>2</calc_fnc>
+              <type>0</type>
+              <periods_cnt>5</periods_cnt>
+            </graph_element>
+            <graph_element item="Template_App_PostgreSQL:postgres.tupupdated">
+              <drawtype>0</drawtype>
+              <sortorder>3</sortorder>
+              <color>CC0000</color>
+              <yaxisside>0</yaxisside>
+              <calc_fnc>2</calc_fnc>
+              <type>0</type>
+              <periods_cnt>5</periods_cnt>
+            </graph_element>
+            <graph_element item="Template_App_PostgreSQL:postgres.tupreturned">
+              <drawtype>0</drawtype>
+              <sortorder>4</sortorder>
+              <color>0000AA</color>
+              <yaxisside>0</yaxisside>
+              <calc_fnc>2</calc_fnc>
+              <type>0</type>
+              <periods_cnt>5</periods_cnt>
+            </graph_element>
+            <graph_element item="Template_App_PostgreSQL:postgres.tupfetched">
+              <drawtype>0</drawtype>
+              <sortorder>2</sortorder>
+              <color>DDDD00</color>
+              <yaxisside>0</yaxisside>
+              <calc_fnc>2</calc_fnc>
+              <type>0</type>
+              <periods_cnt>5</periods_cnt>
+            </graph_element>
+          </graph_elements>
+        </graph>
+        <graph name="Estimate size database" width="900" height="200">
+          <ymin_type>0</ymin_type>
+          <ymax_type>0</ymax_type>
+          <ymin_item_key></ymin_item_key>
+          <ymax_item_key></ymax_item_key>
+          <show_work_period>0</show_work_period>
+          <show_triggers>0</show_triggers>
+          <graphtype>0</graphtype>
+          <yaxismin>0.0000</yaxismin>
+          <yaxismax>100.0000</yaxismax>
+          <show_legend>0</show_legend>
+          <show_3d>0</show_3d>
+          <percent_left>0.0000</percent_left>
+          <percent_right>0.0000</percent_right>
+          <graph_elements>
+            <graph_element item="Template_App_PostgreSQL:postgres.size">
+              <drawtype>1</drawtype>
+              <sortorder>0</sortorder>
+              <color>009900</color>
+              <yaxisside>1</yaxisside>
+              <calc_fnc>2</calc_fnc>
+              <type>0</type>
+              <periods_cnt>5</periods_cnt>
+            </graph_element>
+          </graph_elements>
+        </graph>
+        <graph name="Buffers" width="900" height="200">
+          <ymin_type>0</ymin_type>
+          <ymax_type>0</ymax_type>
+          <ymin_item_key></ymin_item_key>
+          <ymax_item_key></ymax_item_key>
+          <show_work_period>1</show_work_period>
+          <show_triggers>0</show_triggers>
+          <graphtype>0</graphtype>
+          <yaxismin>0.0000</yaxismin>
+          <yaxismax>100.0000</yaxismax>
+          <show_legend>0</show_legend>
+          <show_3d>0</show_3d>
+          <percent_left>0.0000</percent_left>
+          <percent_right>0.0000</percent_right>
+          <graph_elements>
+            <graph_element item="Template_App_PostgreSQL:postgres.buffers_backend">
+              <drawtype>0</drawtype>
+              <sortorder>0</sortorder>
+              <color>BB0000</color>
+              <yaxisside>0</yaxisside>
+              <calc_fnc>2</calc_fnc>
+              <type>0</type>
+              <periods_cnt>5</periods_cnt>
+            </graph_element>
+            <graph_element item="Template_App_PostgreSQL:postgres.buffers_alloc">
+              <drawtype>0</drawtype>
+              <sortorder>1</sortorder>
+              <color>009900</color>
+              <yaxisside>0</yaxisside>
+              <calc_fnc>2</calc_fnc>
+              <type>0</type>
+              <periods_cnt>5</periods_cnt>
+            </graph_element>
+            <graph_element item="Template_App_PostgreSQL:postgres.buffers_checkpoint">
+              <drawtype>0</drawtype>
+              <sortorder>3</sortorder>
+              <color>00CCCC</color>
+              <yaxisside>0</yaxisside>
+              <calc_fnc>2</calc_fnc>
+              <type>0</type>
+              <periods_cnt>5</periods_cnt>
+            </graph_element>
+            <graph_element item="Template_App_PostgreSQL:postgres.buffers_clean">
+              <drawtype>0</drawtype>
+              <sortorder>2</sortorder>
+              <color>EEEE00</color>
+              <yaxisside>0</yaxisside>
+              <calc_fnc>2</calc_fnc>
+              <type>0</type>
+              <periods_cnt>5</periods_cnt>
+            </graph_element>
+          </graph_elements>
+        </graph>
+        <graph name="Checkpoints" width="900" height="200">
+          <ymin_type>0</ymin_type>
+          <ymax_type>0</ymax_type>
+          <ymin_item_key></ymin_item_key>
+          <ymax_item_key></ymax_item_key>
+          <show_work_period>1</show_work_period>
+          <show_triggers>0</show_triggers>
+          <graphtype>0</graphtype>
+          <yaxismin>0.0000</yaxismin>
+          <yaxismax>100.0000</yaxismax>
+          <show_legend>0</show_legend>
+          <show_3d>0</show_3d>
+          <percent_left>0.0000</percent_left>
+          <percent_right>0.0000</percent_right>
+          <graph_elements>
+            <graph_element item="Template_App_PostgreSQL:postgres.checkpoints_timed">
+              <drawtype>0</drawtype>
+              <sortorder>1</sortorder>
+              <color>0000BB</color>
+              <yaxisside>0</yaxisside>
+              <calc_fnc>2</calc_fnc>
+              <type>0</type>
+              <periods_cnt>5</periods_cnt>
+            </graph_element>
+            <graph_element item="Template_App_PostgreSQL:postgres.checkpoints_req">
+              <drawtype>0</drawtype>
+              <sortorder>0</sortorder>
+              <color>009900</color>
+              <yaxisside>0</yaxisside>
+              <calc_fnc>2</calc_fnc>
+              <type>0</type>
+              <periods_cnt>5</periods_cnt>
+            </graph_element>
+          </graph_elements>
+        </graph>
+        <graph name="Connections" width="900" height="200">
+          <ymin_type>0</ymin_type>
+          <ymax_type>0</ymax_type>
+          <ymin_item_key></ymin_item_key>
+          <ymax_item_key></ymax_item_key>
+          <show_work_period>1</show_work_period>
+          <show_triggers>1</show_triggers>
+          <graphtype>0</graphtype>
+          <yaxismin>0.0000</yaxismin>
+          <yaxismax>100.0000</yaxismax>
+          <show_legend>0</show_legend>
+          <show_3d>0</show_3d>
+          <percent_left>0.0000</percent_left>
+          <percent_right>0.0000</percent_right>
+          <graph_elements>
+            <graph_element item="Template_App_PostgreSQL:postgres.activeconn">
+              <drawtype>0</drawtype>
+              <sortorder>0</sortorder>
+              <color>009900</color>
+              <yaxisside>0</yaxisside>
+              <calc_fnc>2</calc_fnc>
+              <type>0</type>
+              <periods_cnt>5</periods_cnt>
+            </graph_element>
+            <graph_element item="Template_App_PostgreSQL:proc.num[,postgres]">
+              <drawtype>0</drawtype>
+              <sortorder>1</sortorder>
+              <color>0000CC</color>
               <yaxisside>0</yaxisside>
               <calc_fnc>2</calc_fnc>
               <type>0</type>
