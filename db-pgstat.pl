@@ -25,8 +25,13 @@ my $hostname = hostname;
 
 my %querys = (
 # State    
+<<<<<<< HEAD
     "size"              =>  qq{SELECT SUM(pg_database_size(datid)) as total_size from pg_stat_database},
     "threads"           =>  qq{SELECT COUNT(*) FROM pg_stat_activity},    
+=======
+    "size"              =>  	qq{SELECT SUM(pg_database_size(datid)) as total_size from pg_stat_database},
+    "threads"           =>  	qq{SELECT COUNT(*) FROM pg_stat_activity},    
+>>>>>>> 2ea2691780e4cdc2457f4c8d672d421908d34b99
     "activeconn"        =>	qq{SELECT SUM(numbackends) FROM pg_stat_database},    
     "tupreturned"       =>	qq{SELECT SUM(tup_returned) FROM pg_stat_database},
     "tupfetched"        =>	qq{SELECT SUM(tup_fetched) FROM pg_stat_database},
@@ -111,7 +116,10 @@ __EOF__
     } 
     exit 0
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2ea2691780e4cdc2457f4c8d672d421908d34b99
 usage() unless defined(@ARGV);
 
 # vim: ts=4 sw=4 sts=4 et ai nu nowrap bg=dark
