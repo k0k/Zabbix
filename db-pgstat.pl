@@ -25,8 +25,8 @@ my $hostname = hostname;
 
 my %querys = (
 # State    
-    "size"              =>  	qq{SELECT SUM(pg_database_size(datid)) as total_size from pg_stat_database},
-    "threads"           =>  	qq{SELECT COUNT(*) FROM pg_stat_activity},    
+    "size"              =>  qq{SELECT SUM(pg_database_size(datid)) as total_size from pg_stat_database},
+    "threads"           =>  qq{SELECT COUNT(*) FROM pg_stat_activity},    
     "activeconn"        =>	qq{SELECT SUM(numbackends) FROM pg_stat_database},    
     "tupreturned"       =>	qq{SELECT SUM(tup_returned) FROM pg_stat_database},
     "tupfetched"        =>	qq{SELECT SUM(tup_fetched) FROM pg_stat_database},
@@ -101,7 +101,7 @@ sub query_database {
 sub usage {
     print << "__EOF__";
 [-] $0 is a perl script designed to work with Zabbix to keep monitored PostgreSQL databases
-some features monitored are: connection pool, buffers, locks, checkpoints.
+some features monitored are: threads, connection pool, size, buffers, locks, checkpoints.
 Usage: $0 [--OPTION]
 Mandatory arguments:
 __EOF__
@@ -109,9 +109,9 @@ __EOF__
     while ( my($key, undef) = each %querys ) {
         print "\t--".$key."\n";
     } 
-
     exit 0
 }
+
 usage() unless defined(@ARGV);
 
 # vim: ts=4 sw=4 sts=4 et ai nu nowrap bg=dark
