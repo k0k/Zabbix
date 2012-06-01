@@ -29,7 +29,7 @@ my $user = "Admin";
 my $pass = "CLAVE";
 
 ##########################################
-# Validación de conexión al API de Zabbix
+# Connect to Zabbix URL
 ##########################################
 sub json_connect {
 	my $json_uri = shift(@_);
@@ -49,16 +49,16 @@ sub json_connect {
 };
 
 ##########################
-# Acceso al API de Zabbix
+# Login on Zabbix
 ##########################
 sub login { 	# http://www.zabbix.com/documentation/1.8/api/user/login
 	my $json_login = JSON::XS->new->pretty(0)->encode(	
 	{
 		jsonrpc => 2.0,
-		method 	=> "user.login",
-		params 	=> {
-			user		=> "$user",
-			password	=> "$pass",
+		method => "user.login",
+		params => {
+			user => "$user",
+			password => "$pass",
 		},
 			id => 1
 	});
@@ -81,7 +81,7 @@ sub login { 	# http://www.zabbix.com/documentation/1.8/api/user/login
 }
 
 ########################
-# Creación del servidor 
+# Server Populate 
 ########################
 sub create_host {	# http://www.zabbix.com/documentation/1.8/api/host/create
 	# Se obtienen los datos básicos del servidor: nombre y dirección IP.
@@ -96,26 +96,26 @@ sub create_host {	# http://www.zabbix.com/documentation/1.8/api/host/create
 	my $json_host_create = JSON::XS->new->pretty(0)->encode(
 	{
 	jsonrpc => 2.0,
-	method 	=> "host.create",
-	params 	=> {
-		host	=>	"$node",
-		ip		=>	"$ipaddr",
-		port	=>	10050,
-		useip	=>	1,
-		dns		=>	"$node",
-		groups	=>	[
+	method => "host.create",
+	params => {
+		host  => "$node",
+		ip    => "$ipaddr",
+		port  => 10050,
+		useip => 1,
+		dns   => "$node",
+		groups => [
 			{
-			groupid		=>	2
+			groupid => 2
          	}
 		],
-			templates 	=>	[
+			templates => [
          		{
-			templateid	=>	10047
+			templateid => 10047
          		}
       		]
    	},
-	auth	=>	"$auth",
-	id		=>	3
+	auth => "$auth",
+	id => 3
 	});
 
 	print "Creating host on Zabbix...\n";
@@ -140,13 +140,13 @@ Creating host on Zabbix...
 
 =head1 NAME
 
-zabbix-JSON-register.pl - Simple perl script para acceder al JSON API de Zabbix, utiliza los metodos de acceso y 
-registro, pensado para desplegarlo via puppet y registrar cada servidor sin intervencion (without monkey assistence). ;D
+zabbix-JSON-register.pl - Simple perl script to populate Zabbix, designed to deploy via puppet and register
+every server without monkey assistence.
 
 =head1 REQUIREMENTS
 
-En sistemas basados en Red Hat Enterprise Linux se puede instalar el modulo JSON-XS a traves del comando:
-yum install perl-JSON-XS o mediante CPAN con: cpan JSON::XS
+RHEL based system you need install JSON-XS perl module with 'yum install perl-JSON-XS' command or via CPAN
+'cpan JSON::XS'.
 
 =head1 CATEGORY
 
