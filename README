@@ -3,14 +3,23 @@ it use the methods of access and register, designed to deploy via puppet and reg
 each server without monkey assistence ;D, the requirements are perl-JSON-XS on Fedora/RHEL5+
 or install via CPAN: cpan JSON::XS.
 
+2.- db-mysqlstat.pl - (Alpha) Simple perl script designed to work with Zabbix to keep monitored 
+MySQL databases some features monitored are: connection pool, threads, locks, and other 
+powerfull status information. This script must be used with zbx_Template_App_MySQL.xml file and
+was tested with RHEL6 + MySQL Enterprise Edition.
+
 2.- db-pgstat.pl - Simple perl script designed to work with Zabbix to keep monitored 
 PostgreSQL databases some features monitored are: connection pool, buffers, locks, checkpoints, 
-must be used with zbx_Template_App_PostgreSQL.xml file.
+must be used with zbx_Template_App_PostgreSQL.xml file and was tested with RHEL4 + PostgreSQL 
+EnterpriseDB.
 
 3.- zbx_Template_App_PostgreSQL.xml: XML template to keep monitored PostgreSQL Enterprise Databases,
 must be used with db-pgstat.pl perl script. 
 
-INSTRUCTIONS:
+3.- zbx_Template_App_MySQL.xml: XML template to keep monitored MySQL Enterprise Databases, 
+must be used with db-mysqlstat.pl perl script. 
+
+INSTRUCTIONS PostgreSQL:
 You just need to put the script: 'db-pgstat.pl' on the databases servers in a executable search path 
 and add user paramenter in zabbix_agentd.conf:
 
