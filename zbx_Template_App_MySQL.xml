@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<zabbix_export version="1.0" date="27.09.12" time="17.02">
+<zabbix_export version="1.0" date="27.09.12" time="17.24">
   <hosts>
     <host name="Template_App_MySQL">
       <proxy_hostid>0</proxy_hostid>
@@ -54,6 +54,15 @@
           <status>0</status>
           <priority>2</priority>
           <comments>The server is always generating old passwords.  Remove old_passwords from your my.cnf</comments>
+        </trigger>
+        <trigger>
+          <description>MySQL is not running on {HOSTNAME}</description>
+          <type>0</type>
+          <expression>{Template_App_MySQL:proc.num[mysqld].last(0)}&lt;1</expression>
+          <url></url>
+          <status>0</status>
+          <priority>0</priority>
+          <comments>MySQL process is death x-x</comments>
         </trigger>
         <trigger>
           <description>MySQL: Percent total connections ({ITEM.LASTVALUE}%) used on {HOSTNAME}</description>
@@ -561,40 +570,6 @@
         </trigger>
       </triggers>
       <items>
-        <item type="0" key="Alive" value_type="0">
-          <description>MySQL is Alive</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>60</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units></units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>0</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
         <item type="0" key="Suggested_key_buffer_size" value_type="1">
           <description>MySQL: Suggested key_buffer_size</description>
           <ipmi_sensor></ipmi_sensor>
@@ -2911,6 +2886,40 @@
           <description>MySQL: Threads cached</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units></units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="proc.num[mysqld]" value_type="3">
+          <description>MySQL is Alive</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>60</delay>
           <history>7</history>
           <trends>365</trends>
           <status>0</status>
