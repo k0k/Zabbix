@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<zabbix_export version="1.0" date="27.09.12" time="16.09">
+<zabbix_export version="1.0" date="27.09.12" time="17.02">
   <hosts>
     <host name="Template_App_MySQL">
       <proxy_hostid>0</proxy_hostid>
@@ -561,7 +561,7 @@
         </trigger>
       </triggers>
       <items>
-        <item type="2" key="Alive" value_type="0">
+        <item type="0" key="Alive" value_type="0">
           <description>MySQL is Alive</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>60</delay>
@@ -731,7 +731,7 @@
             <application>MySQL</application>
           </applications>
         </item>
-        <item type="2" key="Suggested_read_rnd_buffer_size" value_type="1">
+        <item type="0" key="Suggested_read_rnd_buffer_size" value_type="1">
           <description>MySQL: Suggested read_rnd_buffer_size</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
@@ -867,41 +867,7 @@
             <application>MySQL</application>
           </applications>
         </item>
-        <item type="2" key="Suggested_read_buffer_size" value_type="1">
-          <description>MySQL: Suggested read_buffer_size</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units>b</units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="Suggested_query_cache_size" value_type="1">
+        <item type="0" key="Suggested_query_cache_size" value_type="1">
           <description>MySQL: Suggested query_cache_size</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
@@ -935,75 +901,7 @@
             <application>MySQL</application>
           </applications>
         </item>
-        <item type="2" key="Suggested_myisam_sort_buffer_size" value_type="1">
-          <description>MySQL: Suggested myisam_sort_buffer_size</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units>b</units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="Suggested_innodb_log_file_size" value_type="1">
-          <description>MySQL: Suggested innodb_log_file_size</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units>b</units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="Suggested_innodb_log_buffer_size" value_type="1">
+        <item type="0" key="Suggested_innodb_log_buffer_size" value_type="1">
           <description>MySQL: Suggested innodb_log_buffer_size</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
@@ -1037,42 +935,8 @@
             <application>MySQL</application>
           </applications>
         </item>
-        <item type="2" key="Suggested_innodb_buffer_pool_size" value_type="1">
+        <item type="0" key="Suggested_innodb_buffer_pool_size" value_type="1">
           <description>MySQL: Suggested innodb_buffer_pool_size</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units>b</units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="Suggested_innodb_additional_mem_pool_size" value_type="1">
-          <description>MySQL: Suggested innodb_additional_mem_pool_size</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
           <history>7</history>
@@ -1139,7 +1003,7 @@
             <application>MySQL</application>
           </applications>
         </item>
-        <item type="2" key="Aborted_clients" value_type="3">
+        <item type="0" key="Aborted_clients" value_type="3">
           <description>MySQL: Clients: Count terminated abnormally</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
@@ -1207,7 +1071,7 @@
             <application>MySQL</application>
           </applications>
         </item>
-        <item type="2" key="Accounts_without_password" value_type="3">
+        <item type="0" key="Accounts_without_password" value_type="3">
           <description>MySQL: Accounts with blank password</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
@@ -1241,7 +1105,7 @@
             <application>MySQL</application>
           </applications>
         </item>
-        <item type="2" key="Delete_priv_count" value_type="3">
+        <item type="0" key="Delete_priv_count" value_type="3">
           <description>MySQL: Accounts with Delete privileges</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
@@ -1275,7 +1139,7 @@
             <application>MySQL</application>
           </applications>
         </item>
-        <item type="2" key="Drop_priv_count" value_type="3">
+        <item type="0" key="Drop_priv_count" value_type="3">
           <description>MySQL: Accounts with Drop privileges</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
@@ -1309,7 +1173,7 @@
             <application>MySQL</application>
           </applications>
         </item>
-        <item type="2" key="Excessive_revokes" value_type="3">
+        <item type="0" key="Excessive_revokes" value_type="3">
           <description>MySQL: Accounts or Users excessive revokes</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
@@ -1343,41 +1207,7 @@
             <application>MySQL</application>
           </applications>
         </item>
-        <item type="2" key="Accounts_with_broad_host_specifier" value_type="3">
-          <description>MySQL: Accounts with blank host or wildcard specifiers</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units></units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="Alter_priv_count" value_type="3">
+        <item type="0" key="Alter_priv_count" value_type="3">
           <description>MySQL: Accounts with Alter privileges</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
@@ -1411,7 +1241,7 @@
             <application>MySQL</application>
           </applications>
         </item>
-        <item type="2" key="Anonymous_accounts_count" value_type="3">
+        <item type="0" key="Anonymous_accounts_count" value_type="3">
           <description>MySQL: Accounts with blank usernames</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
@@ -1445,41 +1275,7 @@
             <application>MySQL</application>
           </applications>
         </item>
-        <item type="2" key="File_priv_count" value_type="3">
-          <description>MySQL: Accounts with File privileges</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units></units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="Grant_priv_count" value_type="3">
+        <item type="0" key="Grant_priv_count" value_type="3">
           <description>MySQL: Accounts with Grant privileges</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
@@ -1513,7 +1309,7 @@
             <application>MySQL</application>
           </applications>
         </item>
-        <item type="2" key="Insert_priv_count" value_type="3">
+        <item type="0" key="Insert_priv_count" value_type="3">
           <description>MySQL: Accounts with Insert privileges</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
@@ -1581,41 +1377,7 @@
             <application>MySQL</application>
           </applications>
         </item>
-        <item type="2" key="Lock_tables_priv_count" value_type="3">
-          <description>MySQL: Accounts with Lock privileges</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units></units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="Process_priv_count" value_type="3">
+        <item type="0" key="Process_priv_count" value_type="3">
           <description>MySQL: Accounts with Process privileges</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
@@ -1649,7 +1411,7 @@
             <application>MySQL</application>
           </applications>
         </item>
-        <item type="2" key="Shut_down_priv_count" value_type="3">
+        <item type="0" key="Shut_down_priv_count" value_type="3">
           <description>MySQL: Accounts with Shut Down privileges</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
@@ -1683,7 +1445,7 @@
             <application>MySQL</application>
           </applications>
         </item>
-        <item type="2" key="Super_priv_count" value_type="3">
+        <item type="0" key="Super_priv_count" value_type="3">
           <description>MySQL: Accounts with Super privileges</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
@@ -1717,7 +1479,7 @@
             <application>MySQL</application>
           </applications>
         </item>
-        <item type="2" key="Update_priv_count" value_type="3">
+        <item type="0" key="Update_priv_count" value_type="3">
           <description>MySQL: Accounts with Update privileges</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
@@ -2091,7 +1853,7 @@
             <application>MySQL</application>
           </applications>
         </item>
-        <item type="2" key="secure_auth" value_type="3">
+        <item type="0" key="secure_auth" value_type="3">
           <description>MySQL: Config: Old password authentication allowed</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
@@ -2125,7 +1887,7 @@
             <application>MySQL</application>
           </applications>
         </item>
-        <item type="2" key="skip_show_database" value_type="3">
+        <item type="0" key="skip_show_database" value_type="3">
           <description>MySQL: Config: Users can view all databases</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
@@ -2159,7 +1921,7 @@
             <application>MySQL</application>
           </applications>
         </item>
-        <item type="2" key="slow_launch_time" value_type="3">
+        <item type="0" key="slow_launch_time" value_type="3">
           <description>MySQL: Config: Launch time for a slow thread</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
@@ -2193,7 +1955,7 @@
             <application>MySQL</application>
           </applications>
         </item>
-        <item type="2" key="tmp_table_size" value_type="3">
+        <item type="0" key="tmp_table_size" value_type="3">
           <description>MySQL: Config: Tmp table max size in-memory</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
@@ -2227,7 +1989,7 @@
             <application>MySQL</application>
           </applications>
         </item>
-        <item type="2" key="wait_timeout" value_type="3">
+        <item type="0" key="wait_timeout" value_type="3">
           <description>MySQL: Config: Idle time before client disconnected</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
@@ -2261,7 +2023,7 @@
             <application>MySQL</application>
           </applications>
         </item>
-        <item type="2" key="Joins_without_indexes" value_type="3">
+        <item type="0" key="Joins_without_indexes" value_type="3">
           <description>MySQL: Joins not using indices</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
@@ -2295,75 +2057,7 @@
             <application>MySQL</application>
           </applications>
         </item>
-        <item type="2" key="Joins_without_indexes_per_day" value_type="0">
-          <description>MySQL: Joins average not using indices per day</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units></units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="join_buffer_size" value_type="3">
-          <description>MySQL: Joins buffer size requiring full table scan</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units>B</units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="Key_buffer_size" value_type="3">
+        <item type="0" key="Key_buffer_size" value_type="3">
           <description>MySQL: MyISAM: Key buffer size</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
@@ -2397,211 +2091,7 @@
             <application>MySQL</application>
           </applications>
         </item>
-        <item type="2" key="Key_cache_block_size" value_type="3">
-          <description>MySQL: MyISAM: Block size of the key buffer</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units>B</units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="Key_reads" value_type="3">
-          <description>MySQL: MyISAM: Number of reads of a key block from disk</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units></units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="Key_read_requests" value_type="3">
-          <description>MySQL: MyISAM: Key cache blocks requested</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units>b</units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="Key_writes" value_type="3">
-          <description>MySQL: MyISAM: Key writes</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units>b</units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="Key_write_requests" value_type="3">
-          <description>MySQL: MyISAM: Key block write requests</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units></units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="myisam_recover_options" value_type="3">
-          <description>MySQL: MyISAM: Crashes not auto corrected</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units></units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="myisam_sort_buffer_size" value_type="3">
+        <item type="0" key="myisam_sort_buffer_size" value_type="3">
           <description>MySQL: MyISAM: Sort buffer to rebuilding index after repair</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
@@ -2635,143 +2125,7 @@
             <application>MySQL</application>
           </applications>
         </item>
-        <item type="2" key="Number_myisam_key_blocks" value_type="3">
-          <description>MySQL: MyISAM: Key cache blocks</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units>b</units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="Percent_myisam_key_cache_hit_rate" value_type="3">
-          <description>MySQL: MyISAM: Key cache Hit ratio %</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units></units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="Percent_myisam_key_cache_in_use" value_type="3">
-          <description>MySQL: MyISAM: Key cache in use %</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units></units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="Percent_myisam_key_cache_write_ratio" value_type="3">
-          <description>MySQL: MyISAM: Key cache write ratio %</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units></units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="read_buffer_size" value_type="3">
+        <item type="0" key="read_buffer_size" value_type="3">
           <description>MySQL: MyISAM: Buffer size for full-table scans</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
@@ -2805,7 +2159,7 @@
             <application>MySQL</application>
           </applications>
         </item>
-        <item type="2" key="Used_myisam_key_cache_blocks" value_type="3">
+        <item type="0" key="Used_myisam_key_cache_blocks" value_type="3">
           <description>MySQL: MyISAM: Key cache blocks used</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
@@ -2839,42 +2193,8 @@
             <application>MySQL</application>
           </applications>
         </item>
-        <item type="2" key="Last_Errno" value_type="3">
+        <item type="0" key="Last_Errno" value_type="3">
           <description>MySQL: Last error number generated</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units></units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="Last_Error" value_type="1">
-          <description>MySQL: Last error string</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
           <history>7</history>
@@ -3077,7 +2397,7 @@
             <application>MySQL</application>
           </applications>
         </item>
-        <item type="2" key="Percent_innodb_cache_hit_rate" value_type="3">
+        <item type="0" key="Percent_innodb_cache_hit_rate" value_type="3">
           <description>MySQL: InnoDB: Percent hit rate of cache</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
@@ -3111,109 +2431,7 @@
             <application>MySQL</application>
           </applications>
         </item>
-        <item type="2" key="Percent_innodb_cache_write_waits_required" value_type="3">
-          <description>MySQL: InnoDB: Percent of cache writes to wait</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units></units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="Percent_innodb_log_size_vs_buffer_pool" value_type="3">
-          <description>MySQL: InnoDB: Data vs. buffer size %</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units></units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="Percent_innodb_log_write_waits_required" value_type="3">
-          <description>MySQL: InnoDB: Log writes to wait %</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units></units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="Innodb_buffer_pool_size" value_type="3">
+        <item type="0" key="Innodb_buffer_pool_size" value_type="3">
           <description>MySQL: InnoDB: Buffer_pool size</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
@@ -3247,41 +2465,7 @@
             <application>MySQL</application>
           </applications>
         </item>
-        <item type="2" key="Innodb_flush_log_at_trx_commit" value_type="3">
-          <description>MySQL: InnoDB: How to flush logs</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units></units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="Innodb_log_buffer_size" value_type="3">
+        <item type="0" key="Innodb_log_buffer_size" value_type="3">
           <description>MySQL: InnoDB: Log buffer size for tables</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
@@ -3315,7 +2499,7 @@
             <application>MySQL</application>
           </applications>
         </item>
-        <item type="2" key="Innodb_log_files_in_group" value_type="3">
+        <item type="0" key="Innodb_log_files_in_group" value_type="3">
           <description>MySQL: InnoDB: Number of files in log group</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
@@ -3349,7 +2533,7 @@
             <application>MySQL</application>
           </applications>
         </item>
-        <item type="2" key="Innodb_log_file_size" value_type="3">
+        <item type="0" key="Innodb_log_file_size" value_type="3">
           <description>MySQL: InnoDB: Size of file in each log group</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
@@ -3383,755 +2567,7 @@
             <application>MySQL</application>
           </applications>
         </item>
-        <item type="2" key="Innodb_log_file_size_total" value_type="3">
-          <description>MySQL: InnoDB: Total size of log files</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units>B</units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="have_query_cache" value_type="1">
-          <description>MySQL: Query cache is enabled</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units></units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="Percent_query_cache_fragmentation" value_type="3">
-          <description>MySQL: Query cache fragmentation</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units></units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="Percent_query_cache_hit_rate" value_type="3">
-          <description>MySQL: Query cache hit rate %</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units></units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="Percent_query_cache_pruned_from_inserts" value_type="3">
-          <description>MySQL: Query cache number pruned due to memory %</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units></units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="Qcache_free_blocks" value_type="3">
-          <description>MySQL: Query cache free blocks</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units></units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="Qcache_free_memory" value_type="3">
-          <description>MySQL: Query cache free memory</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units>B</units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="Qcache_hits" value_type="3">
-          <description>MySQL: Query cache hits</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units>b</units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="Qcache_inserts" value_type="3">
-          <description>MySQL: Query cache number inserted</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units>b</units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="Qcache_lowmem_prunes" value_type="3">
-          <description>MySQL: Query cache number pruned from query cache</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units></units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="Qcache_lowmem_prunes_per_day" value_type="0">
-          <description>MySQL: Query cache average pruned from cache per day</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units></units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="Qcache_not_cached" value_type="3">
-          <description>MySQL: Query cache number not cached</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units>b</units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="Qcache_queries_in_cache" value_type="3">
-          <description>MySQL: Query cache number currently in cache</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units>b</units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="Qcache_total_blocks" value_type="3">
-          <description>MySQL: Query cache total blocks</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units>b</units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="query_cache_limit" value_type="3">
-          <description>MySQL: Query cache resultset max size</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units>B</units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="query_cache_min_res_unit" value_type="3">
-          <description>MySQL: Query cache block size</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units></units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="query_cache_size" value_type="3">
-          <description>MySQL: Query cache size</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units>B</units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="query_cache_type" value_type="3">
-          <description>MySQL: Query cache type</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units></units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="Percent_deletes_vs_total" value_type="3">
-          <description>MySQL: Queries: % Deletes of overall</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units></units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="Percent_full_table_scans" value_type="3">
-          <description>MySQL: Queries: % Full table scans</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units></units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="Queries_per_sec" value_type="0">
-          <description>MySQL: Queries: Queries per second</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units></units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="Percent_inserts_vs_total" value_type="3">
-          <description>MySQL: Queries: % Inserts of overall</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units></units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="Average_rows_per_query" value_type="0">
+        <item type="0" key="Average_rows_per_query" value_type="0">
           <description>MySQL: Queries: Average rows returned</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
@@ -4165,143 +2601,7 @@
             <application>MySQL</application>
           </applications>
         </item>
-        <item type="2" key="Indexed_rows_returned" value_type="3">
-          <description>MySQL: Queries: Total rows using indices</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units>b</units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="Questions" value_type="3">
-          <description>MySQL: Queries: Total number executed</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units>b</units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="read_rnd_buffer_size" value_type="3">
-          <description>MySQL: Queries: Buffer used for ORDER BY</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units>B</units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="Percent_selects_vs_total" value_type="3">
-          <description>MySQL: Queries: % Selects of overall queries</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units></units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="Percent_tmp_sort_tables" value_type="3">
+        <item type="0" key="Percent_tmp_sort_tables" value_type="3">
           <description>MySQL: Queries: % Sorts requiring tmp tables</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
@@ -4335,143 +2635,7 @@
             <application>MySQL</application>
           </applications>
         </item>
-        <item type="2" key="Percent_transactions_saved_tmp_file" value_type="3">
-          <description>MySQL: Queries: % transactions saved to disk</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units></units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="Percent_updates_vs_total" value_type="3">
-          <description>MySQL: Queries: % Updates of overall queries</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units></units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="Percent_writes_vs_total" value_type="3">
-          <description>MySQL: Queries: % Write of overall queries</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units></units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="Select_full_join" value_type="3">
-          <description>MySQL: Queries: Joins w/ full table scans of 2+ tables</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units></units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="Select_scan" value_type="3">
+        <item type="0" key="Select_scan" value_type="3">
           <description>MySQL: Queries: Selects w/ full table scans</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
@@ -4505,143 +2669,7 @@
             <application>MySQL</application>
           </applications>
         </item>
-        <item type="2" key="sort_buffer_size" value_type="3">
-          <description>MySQL: Queries: Sort buffer size for in-memory sorting</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units>B</units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="Sort_range" value_type="3">
-          <description>MySQL: Queries: Sorts done using ranges</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units></units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="Sort_scan" value_type="3">
-          <description>MySQL: Queries: Sorts that scanned a table</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units></units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="Slow_queries" value_type="3">
-          <description>MySQL: Queries: Number flagged as slow</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units></units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="Total_rows_returned" value_type="3">
+        <item type="0" key="Total_rows_returned" value_type="3">
           <description>MySQL: Queries: Total rows returned</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
@@ -4675,41 +2703,7 @@
             <application>MySQL</application>
           </applications>
         </item>
-        <item type="2" key="Total_sort" value_type="3">
-          <description>MySQL: Queries: Sorts total number</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units>b</units>
-          <multiplier>0</multiplier>
-          <delta>0</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
-        <item type="2" key="Percent_thread_cache_hit_rate" value_type="3">
+        <item type="0" key="Percent_thread_cache_hit_rate" value_type="3">
           <description>MySQL: Threads hitting the thread-cache %</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
@@ -4777,40 +2771,6 @@
             <application>MySQL</application>
           </applications>
         </item>
-        <item type="2" key="Threads_created_rate" value_type="3">
-          <description>MySQL: Threads creation rate</description>
-          <ipmi_sensor></ipmi_sensor>
-          <delay>300</delay>
-          <history>7</history>
-          <trends>365</trends>
-          <status>0</status>
-          <data_type>0</data_type>
-          <units></units>
-          <multiplier>0</multiplier>
-          <delta>1</delta>
-          <formula>1</formula>
-          <lastlogsize>0</lastlogsize>
-          <logtimefmt></logtimefmt>
-          <delay_flex></delay_flex>
-          <authtype>0</authtype>
-          <username></username>
-          <password></password>
-          <publickey></publickey>
-          <privatekey></privatekey>
-          <params></params>
-          <trapper_hosts></trapper_hosts>
-          <snmp_community></snmp_community>
-          <snmp_oid></snmp_oid>
-          <snmp_port>161</snmp_port>
-          <snmpv3_securityname></snmpv3_securityname>
-          <snmpv3_securitylevel>0</snmpv3_securitylevel>
-          <snmpv3_authpassphrase></snmpv3_authpassphrase>
-          <snmpv3_privpassphrase></snmpv3_privpassphrase>
-          <valuemapid>0</valuemapid>
-          <applications>
-            <application>MySQL</application>
-          </applications>
-        </item>
         <item type="0" key="Threads_running" value_type="3">
           <description>MySQL: Threads currently running</description>
           <ipmi_sensor></ipmi_sensor>
@@ -4845,7 +2805,7 @@
             <application>MySQL</application>
           </applications>
         </item>
-        <item type="2" key="thread_cache_size" value_type="3">
+        <item type="0" key="thread_cache_size" value_type="3">
           <description>MySQL: Threads cache size</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
@@ -5015,6 +2975,142 @@
             <application>MySQL</application>
           </applications>
         </item>
+        <item type="0" key="Last_Error" value_type="1">
+          <description>MySQL: Last error string</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units></units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="Percent_innodb_cache_write_waits_required" value_type="3">
+          <description>MySQL: InnoDB: Percent of cache writes to wait</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units></units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="Percent_innodb_log_size_vs_buffer_pool" value_type="3">
+          <description>MySQL: InnoDB: Data vs. buffer size %</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units></units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="Innodb_flush_log_at_trx_commit" value_type="3">
+          <description>MySQL: InnoDB: How to flush logs</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units></units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
         <item type="0" key="Fragmented_table_count" value_type="3">
           <description>MySQL: Table: Fragmented count in all databases</description>
           <ipmi_sensor></ipmi_sensor>
@@ -5024,6 +3120,346 @@
           <status>0</status>
           <data_type>0</data_type>
           <units></units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="Percent_innodb_log_write_waits_required" value_type="3">
+          <description>MySQL: InnoDB: Log writes to wait %</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units></units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="Percent_myisam_key_cache_write_ratio" value_type="3">
+          <description>MySQL: MyISAM: Key cache write ratio %</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units></units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="Key_read_requests" value_type="3">
+          <description>MySQL: MyISAM: Key cache blocks requested</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units>b</units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="Percent_myisam_key_cache_in_use" value_type="3">
+          <description>MySQL: MyISAM: Key cache in use %</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units></units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="Key_reads" value_type="3">
+          <description>MySQL: MyISAM: Number of reads of a key block from disk</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units></units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="Key_cache_block_size" value_type="3">
+          <description>MySQL: MyISAM: Block size of the key buffer</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units>B</units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="Key_writes" value_type="3">
+          <description>MySQL: MyISAM: Key writes</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units>b</units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="Key_write_requests" value_type="3">
+          <description>MySQL: MyISAM: Key block write requests</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units></units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="Percent_myisam_key_cache_hit_rate" value_type="3">
+          <description>MySQL: MyISAM: Key cache Hit ratio %</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units></units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="Number_myisam_key_blocks" value_type="3">
+          <description>MySQL: MyISAM: Key cache blocks</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units>b</units>
           <multiplier>0</multiplier>
           <delta>0</delta>
           <formula>1</formula>
@@ -5070,6 +3506,142 @@
           <publickey></publickey>
           <privatekey></privatekey>
           <params>100*last("Aborted_connects")/last("Connections")</params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="myisam_recover_options" value_type="3">
+          <description>MySQL: MyISAM: Crashes not auto corrected</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units></units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="have_query_cache" value_type="1">
+          <description>MySQL: Query cache is enabled</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units></units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="Innodb_log_file_size_total" value_type="3">
+          <description>MySQL: InnoDB: Total size of log files</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units>B</units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="query_cache_min_res_unit" value_type="3">
+          <description>MySQL: Query cache block size</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units></units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
           <trapper_hosts></trapper_hosts>
           <snmp_community></snmp_community>
           <snmp_oid></snmp_oid>
@@ -5151,6 +3723,74 @@
             <application>MySQL</application>
           </applications>
         </item>
+        <item type="0" key="query_cache_limit" value_type="3">
+          <description>MySQL: Query cache resultset max size</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units>B</units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="Qcache_total_blocks" value_type="3">
+          <description>MySQL: Query cache total blocks</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units>b</units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
         <item type="0" key="Percent_table_lock_contention" value_type="3">
           <description>MySQL: Table: Locks vs. table opens %</description>
           <ipmi_sensor></ipmi_sensor>
@@ -5185,8 +3825,1096 @@
             <application>MySQL</application>
           </applications>
         </item>
+        <item type="0" key="query_cache_type" value_type="3">
+          <description>MySQL: Query cache type</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units></units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
         <item type="0" key="Table_locks_immediate" value_type="3">
           <description>MySQL: Table: Locks acquired immediately</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units></units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="Percent_deletes_vs_total" value_type="3">
+          <description>MySQL: Queries: % Deletes of overall</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units></units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="Percent_inserts_vs_total" value_type="3">
+          <description>MySQL: Queries: % Inserts of overall</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units></units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="Queries_per_sec" value_type="0">
+          <description>MySQL: Queries: Queries per second</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units></units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="Percent_full_table_scans" value_type="3">
+          <description>MySQL: Queries: % Full table scans</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units></units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="Qcache_queries_in_cache" value_type="3">
+          <description>MySQL: Query cache number currently in cache</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units>b</units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="Qcache_not_cached" value_type="3">
+          <description>MySQL: Query cache number not cached</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units>b</units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="Percent_query_cache_pruned_from_inserts" value_type="3">
+          <description>MySQL: Query cache number pruned due to memory %</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units></units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="Percent_query_cache_hit_rate" value_type="3">
+          <description>MySQL: Query cache hit rate %</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units></units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="Percent_query_cache_fragmentation" value_type="3">
+          <description>MySQL: Query cache fragmentation</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units></units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="Qcache_free_blocks" value_type="3">
+          <description>MySQL: Query cache free blocks</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units></units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="Qcache_free_memory" value_type="3">
+          <description>MySQL: Query cache free memory</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units>B</units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="Qcache_lowmem_prunes_per_day" value_type="0">
+          <description>MySQL: Query cache average pruned from cache per day</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units></units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="Qcache_lowmem_prunes" value_type="3">
+          <description>MySQL: Query cache number pruned from query cache</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units></units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="Qcache_inserts" value_type="3">
+          <description>MySQL: Query cache number inserted</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units>b</units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="Qcache_hits" value_type="3">
+          <description>MySQL: Query cache hits</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units>b</units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="Joins_without_indexes_per_day" value_type="0">
+          <description>MySQL: Joins average not using indices per day</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units></units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="join_buffer_size" value_type="3">
+          <description>MySQL: Joins buffer size requiring full table scan</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units>B</units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="Suggested_read_buffer_size" value_type="1">
+          <description>MySQL: Suggested read_buffer_size</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units>b</units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="Suggested_myisam_sort_buffer_size" value_type="1">
+          <description>MySQL: Suggested myisam_sort_buffer_size</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units>b</units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="Suggested_innodb_log_file_size" value_type="1">
+          <description>MySQL: Suggested innodb_log_file_size</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units>b</units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="Indexed_rows_returned" value_type="3">
+          <description>MySQL: Queries: Total rows using indices</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units>b</units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="Questions" value_type="3">
+          <description>MySQL: Queries: Total number executed</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units>b</units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="Percent_selects_vs_total" value_type="3">
+          <description>MySQL: Queries: % Selects of overall queries</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units></units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="Total_sort" value_type="3">
+          <description>MySQL: Queries: Sorts total number</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units>b</units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="Threads_created_rate" value_type="3">
+          <description>MySQL: Threads creation rate</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units></units>
+          <multiplier>0</multiplier>
+          <delta>1</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="Slow_queries" value_type="3">
+          <description>MySQL: Queries: Number flagged as slow</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units></units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="Sort_scan" value_type="3">
+          <description>MySQL: Queries: Sorts that scanned a table</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units></units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="Percent_updates_vs_total" value_type="3">
+          <description>MySQL: Queries: % Updates of overall queries</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units></units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="Select_full_join" value_type="3">
+          <description>MySQL: Queries: Joins w/ full table scans of 2+ tables</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units></units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="Percent_writes_vs_total" value_type="3">
+          <description>MySQL: Queries: % Write of overall queries</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units></units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="Sort_range" value_type="3">
+          <description>MySQL: Queries: Sorts done using ranges</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
           <history>7</history>
@@ -5323,6 +5051,40 @@
         </item>
         <item type="0" key="Com_drop_function" value_type="3">
           <description>MySQL: Number of functions dropped</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units></units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="Percent_transactions_saved_tmp_file" value_type="3">
+          <description>MySQL: Queries: % transactions saved to disk</description>
           <ipmi_sensor></ipmi_sensor>
           <delay>300</delay>
           <history>7</history>
@@ -5568,6 +5330,74 @@
           <status>0</status>
           <data_type>0</data_type>
           <units></units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="query_cache_size" value_type="3">
+          <description>MySQL: Query cache size</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units>B</units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="read_rnd_buffer_size" value_type="3">
+          <description>MySQL: Queries: Buffer used for ORDER BY</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units>B</units>
           <multiplier>0</multiplier>
           <delta>0</delta>
           <formula>1</formula>
@@ -6103,6 +5933,40 @@
             <application>MySQL</application>
           </applications>
         </item>
+        <item type="0" key="sort_buffer_size" value_type="3">
+          <description>MySQL: Queries: Sort buffer size for in-memory sorting</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units>B</units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
         <item type="0" key="Percent_tmp_tables_on_disk" value_type="3">
           <description>MySQL: Tmp tables written to disk %</description>
           <ipmi_sensor></ipmi_sensor>
@@ -6350,6 +6214,142 @@
           <status>0</status>
           <data_type>0</data_type>
           <units>B</units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="Lock_tables_priv_count" value_type="3">
+          <description>MySQL: Accounts with Lock privileges</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units></units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="Suggested_innodb_additional_mem_pool_size" value_type="1">
+          <description>MySQL: Suggested innodb_additional_mem_pool_size</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units>b</units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="File_priv_count" value_type="3">
+          <description>MySQL: Accounts with File privileges</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units></units>
+          <multiplier>0</multiplier>
+          <delta>0</delta>
+          <formula>1</formula>
+          <lastlogsize>0</lastlogsize>
+          <logtimefmt></logtimefmt>
+          <delay_flex></delay_flex>
+          <authtype>0</authtype>
+          <username></username>
+          <password></password>
+          <publickey></publickey>
+          <privatekey></privatekey>
+          <params></params>
+          <trapper_hosts></trapper_hosts>
+          <snmp_community></snmp_community>
+          <snmp_oid></snmp_oid>
+          <snmp_port>161</snmp_port>
+          <snmpv3_securityname></snmpv3_securityname>
+          <snmpv3_securitylevel>0</snmpv3_securitylevel>
+          <snmpv3_authpassphrase></snmpv3_authpassphrase>
+          <snmpv3_privpassphrase></snmpv3_privpassphrase>
+          <valuemapid>0</valuemapid>
+          <applications>
+            <application>MySQL</application>
+          </applications>
+        </item>
+        <item type="0" key="Accounts_with_broad_host_specifier" value_type="3">
+          <description>MySQL: Accounts with blank host or wildcard specifiers</description>
+          <ipmi_sensor></ipmi_sensor>
+          <delay>300</delay>
+          <history>7</history>
+          <trends>365</trends>
+          <status>0</status>
+          <data_type>0</data_type>
+          <units></units>
           <multiplier>0</multiplier>
           <delta>0</delta>
           <formula>1</formula>
