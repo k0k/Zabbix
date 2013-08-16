@@ -26,7 +26,7 @@ use IO::Socket;
 # Credenciales Zabbix Portal.
 my $json_uri = "http://URL_HERE/zabbix/api_jsonrpc.php";
 my $user = "Admin";
-my $pass = "CLAVE";
+my $pass = "PASSWORD";
 
 ##########################################
 # Connect to Zabbix URL
